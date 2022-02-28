@@ -10,12 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+    <style type="text/tailwindcss">
+
+    </style>
+
 </head>
 
-<body>
+<body class="dark:bg-slate-800">
+    <div class="flex justify-center mt-5">
+        <span class="mr-2 text-slate-500">Light</span>
+        <input type="checkbox" id="toggle" class="hidden" />
+        <label for="toggle">
+            <div class="w-9 h-5 bg-slate-400 rounded-full flex items-center p-1 cursor-pointer">
+                <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="ml-2 text-slate-400">Dark</span>
+    </div>
+
+
     <article class="mx-4 my-4 p-4 rounded-xl bg-gradient-to-r from-green-300 to-blue-300">
         <h1 class="text-8xl font-poppins mb-3">Article 1</h1>
-        <p class="mb-3">Created by <span class="font-bold text-blue-700">Luky Purdiono</span> at <span class="font-bold text-blue-700">2022-02-24 08:00</span></p>
+        <p class="mb-3"> Created by <span class="font-bold text-blue-700">Luky Purdiono</span> at <span class="font-bold text-blue-700">2022-02-24 08:00</span></p>
         <blockquote class="mb-2 italic text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, nobis. Quae, eaque neque reiciendis tenetur aspernatur, id blanditiis iusto debitis commodi repellendus itaque iste dolorum obcaecati! Cum alias optio ullam consequuntur porro quisquam
             adipisci laboriosam aliquid, inventore dolore repellat nemo cumque ipsa! Modi quibusdam tempore aliquam praesentium adipisci at sint.</blockquote>
         <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto rem libero natus aliquam. Doloremque adipisci labore numquam voluptas, praesentium quas! Porro non corporis vel debitis atque facilis architecto repellat voluptatibus. Ipsa accusantium
@@ -34,6 +50,111 @@
             at natus vero ratione assumenda velit facilis cumque modi, excepturi laudantium dolores exercitationem officia. Vitae inventore tempora deserunt animi alias magnam iste, eaque nesciunt fugiat reiciendis exercitationem ab omnis, obcaecati praesentium
             dicta. Ipsum, eius quia?</p>
     </article>
+
+
+
+
+    <!-- <div class="mt-32 mb-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-slate-500 overflow-hidden border-8 flex" style="background-image: url(https://source.unsplash.com/1000x600?computer)">
+            <div class="w-[200px] h-[200px] rounded-full bg-white/70 m-auto"></div>
+        </div> -->
+
+    <button class="max-w-xl mt-10 mx-auto block my-10 rounded-full px-5 py-2 text-white bg-sky-500 hover:bg-sky-700 active:bg-black">SIMPAN</button>
+
+    <button class="mx-auto mb-10 block bg-sky-500 px-4 mt-2 py-2 text-white w-28 rounded-full hover:bg-sky-600">SAVE</button>
+
+    <div class="font-serif w-3/4  mx-auto p-4 rounded-xl border-2 shadow-lg hover:bg-sky-300 group">
+        <h2 class="text-2xl font-bold mb-2 group-hover:text-white">My Card</h2>
+        <p class="text-justify group-hover:text-white first-letter:text-7xl first-letter:float-left first-letter:mr-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quasi quos sit rem, maiores facere laboriosam dolores amet dignissimos, minus maxime illum culpa, autem eos eius? Deleniti, inventore! Minus culpa libero cumque cupiditate optio,
+            officiis qui. Quisquam, magni ullam dicta omnis, ea, libero dolore facilis vero ipsum inventore veritatis expedita.</p>
+    </div>
+
+    <div class="w-3/4 p-4 mx-auto mt-3 rounded-xl border-2 border-slate-200 shadow-lg">
+        <label for="email"></label>
+        <span class="block mb-1 after:content-['*'] after:text-pink-400 after:ml-0.5 font-semibold">Email</span>
+        <input class="border-2 border-sky-400 shadow rounded w-full py-2 px-3 block text-sm focus:outline-none focus:ring-1 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer" type="email" name="email" id="email" placeholder="masukkan email anda">
+        <span class="invisible text-sm m-1 peer-invalid:visible peer-invalid:text-pink-700">Email tidak valid</span>
+    </div>
+
+    <hr class="mt-32 border-6 border-slate-700">
+
+    <div class="container px-6 my-10 mx-auto font-poppins max-w-md sm:max-w-xl">
+        <h1 class="text-4xl mb-4 font-bold sm:text-5xl ">Luky Purdiono</h1>
+        <img src="../img/1280x960.jpg" alt="image" class="rounded-xl shadow-lg mb-4 sm:mt-6 sm:h-70 sm:w-full sm:object-cover sm-object-center">
+        <h3 class="font-semibold text-xl mb-2 sm:mt-8 sm:text-4xl">Mari Belajar <span class="text-sky-400 uppercase">Tailwind CSS</span></h3>
+        <p class="text-base mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae dignissimos unde voluptas, doloremque accusamus accusantium molestias nulla ullam quam sed.</p>
+        <div class=""><a href="#" class="bg-red-500 text-white px-4 rounded-xl py-2 tracking-wider">SUBSCRIBE MY YOUTUBE</a></div>
+    </div>
+
+    <hr class="border border-black">
+
+    <h1 class="mt-10 text-center mb-6 text-4xl font-bold font-poppins">My Galleries</h1>
+
+    <div class="container mx-auto px-6 font-poppins sm:flex sm:flex-wrap sm:justify-center sm:gap-3">
+
+        <div class="mb-4 rounded-xl shadow-lg overflow-hidden sm:w-64 hover:bg-sky-200 hover:scale-150">
+            <img src="../img/1280x960.jpg" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <h3 class="font-bold text-lg text-slate-700 mb-2">Title Image</h3>
+                <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores?</p>
+            </div>
+        </div>
+
+        <div class="mb-4 rounded-xl shadow-lg overflow-hidden sm:w-64">
+            <img src="../img/1280x960.jpg" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <h3 class="font-bold text-lg text-slate-700 mb-2">Title Image</h3>
+                <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores?</p>
+            </div>
+        </div>
+
+        <div class="mb-4 rounded-xl shadow-lg overflow-hidden sm:w-64">
+            <img src="../img/1280x960.jpg" alt="" class="w-full">
+            <div class="px-6 py-4">
+                <h3 class="font-bold text-lg text-slate-700 mb-2">Title Image</h3>
+                <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid gap-2 grid-cols-2 mt-64 p-2 md:grid-cols-4 md:p-4">
+        <h1 class="h-15 text-xl font-semibold text-slate-700 md:flex md:col-start-4 md:row-start-2"><span class="self-center">Luky Purdiono</span></h1>
+        <div class="h-15 text-lg font-bold text-slate-600 md:flex md:col-start-2 md:row-start-2"><span class="self-end">@lukypurdiono</span></div>
+
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/1.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/2.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/3.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/4.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/5.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/6.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/7.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/8.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/9.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+        <div class="bg-sky-300 aspect-[4/3] rounded-lg h-15 md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('/img/10.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+        </div>
+    </div>
+
+    <div class="mb-32"></div>
+
 </body>
 
 </html>
